@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <!-- Links css -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/styel.css">
+</head>
+<body>
+    
+
+    <div class="container crud"> 
+        <div class="head">
+            <h2>Cruds</h2>
+            <p>CREATE READ UPDATE DELETE SEARCH</p>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="inpouts">
+            <input type="text" placeholder="Title" id="title">
+            <div class="price d-flex align-items-center justify-content-between">
+                <input type="number" placeholder="Price" id="price">
+                <input type="number" placeholder="taxes" id="taxes">
+                <input type="number" placeholder="ads" id="ads">
+                <input type="number" placeholder="discount" id="discount">
+            
+                <small id="total"></small>
+                
+            
+                
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="submit" >Create</button>
+
+
+        </div>
+        <div class="outputs">
+            <div class="search">
+                <input type="text" placeholder="search" id="search">
+                <div class="btnsearch d-flex align-items-center justify-content-between  ">
+                    <button onclick="gitsearchMood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="gitsearchMood(this.id)" id="searchCategory">Search By Category</button>
+                </div>
+            </div>
+        </div>
+        <div id="deleteAll"></div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th> 
+            </tr>
+            <tbody id="tbody">
+                
+                
+               
+                   
+                
+            </tbody>
+        </table>
+
+
+    </div>
+                                  
+
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Links js -->
+    <script src="./JS/script.js"></script>
+   
+    <script src="./JS/all.min.js"></script>
+   
+    <script src="./JS/bootstrap.js"></script>
+   
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+   
+    <script src="./JS/popper.min.js"></script>
+   
+</body>
+</html>
